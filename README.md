@@ -10,35 +10,34 @@ Standard jekyll structure.
 
 - Views in [_layouts](/_layouts/).
 - Components in [_includes](/_includes/).
-- Libraries in [assets](/assets/).
-- Data in [_data](/_data/).
+- Images, Packages, Scripts in [assets](/assets/).
 - Stylesheet in [_sass](/_sass/).
-- Javascript/Typescript in [_script](/_script/).
+- Other scripts in [_script](/_script/).
 
 
 ## Design
 
 <pre>
 
-     |    Header    |
-     ----------------
-     |              |
- Nav |    Content   | Utils
-     |              |
-     ----------------
-     |    Footer    |
+        |    Header    |
+        ----------------
+        |              |
+ Navbar |     Posts    | Sidebar
+        |              |
+        ----------------
+        |    Footer    |
 
 </pre>
 
-The Navbar and Footer is static.
+The **Navbar** and Footer is static.
 
 ### Home
 
-The **Header** will contain a searchbar. Search is performed on request (for static pages; dynamically on server) on the blog articles. The **Utils** will contain the about section and display picture along with socials. The **Content** will list articles as cards.
+The **Header** will contain a searchbar. Search is performed on request (for static pages; dynamically on server) on the blog articles. The **Utils** will contain the about section and display picture along with socials. The **Posts** will list articles as cards.
 
 ### Post
 
-The **Header** will contain the title of the post. The **Utils** with contain the contents/section names in faded manner.
+The **Header** will contain the title of the post. The **Sidebar** with contain the contents/section names in faded manner.
 
 ## Themes
 
@@ -61,3 +60,25 @@ English (India/UK) is the default.
 - [MathJax](https://www.mathjax.org/)
 - [ ] Blender/CAD/Animation
 - [ ] Diagrams/Flowcharts
+- [ ] Tex
+
+## Markups
+
+- [Liquid Template Language](https://shopify.github.io/liquid/).
+
+## Local
+
+Install ruby. Use `rbenv` if a multiple versions of ruby need to be present in development system.
+
+```shell
+
+# Install jekyll and blunder.
+gem install jekyll bundler
+
+# Install dependencies.
+bundle install
+
+# Host on local.
+bundle exec jekyll serve
+
+```
