@@ -13,3 +13,6 @@ Gemfile.lock
 # NPM
 node_modules
 package-lock.json
+
+# Ruby
+.ruby-version
