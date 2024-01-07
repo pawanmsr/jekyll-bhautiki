@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Jekyll Bhautiki # the title of the website (e.g.: name of the individual)
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Physics inspired feature-rich Jekyll theme with math support.
+  Physics inspired feature-rich Jekyll theme with Math support.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
@@ -68,7 +68,8 @@ exclude:
   - vendor/ruby/
   - LICENSE
   - README.md
-
+  - package.json
+  - package-lock.json
 
 kramdown:
   syntax_highlighter: rouge
