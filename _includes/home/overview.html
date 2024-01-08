@@ -10,39 +10,54 @@
     </div>
 
     <div class="cell small-2">
-        <div class="menu-centered" id="socials">
-            <ul class="menu simple">
-                <li>
-                    <a href="#">
-                        <i data-feather="twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i data-feather="github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i data-feather="facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i data-feather="instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i data-feather="twitch"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <ul class="menu align-center simple">
+            {% if site.twitter.username %}
+            <li>
+                <a href="https://{{ site.twitter.url }}/{{ site.twitter.username }}">
+                    <i data-feather="twitter"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.github.username %}
+            <li>
+                <a href="https://{{ site.github.url }}/{{ site.github.username }}">
+                    <i data-feather="github"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.linkedin.username %}
+            <li>
+                <a href="https://{{ site.linkedin.url }}/{{ site.linkedin.username }}">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.facebook.username %}
+            <li>
+                <a href="https://{{ site.facebook.url }}/{{ site.facebook.username }}">
+                    <i data-feather="facebook"></i>
+                </a>
+            </li>
+            {% endif %}
+
+            {% if site.instagram.username %}
+            <li>
+                <a href="https://{{ site.instagram.url }}/{{ site.instagram.username }}">
+                    <i data-feather="instagram"></i>
+                </a>
+            </li>
+            {% endif %}
+            
+            {% if site.twitch.username %}
+            <li>
+                <a href="https://{{ site.twitch.url }}/{{ site.twitch.username }}">
+                    <i data-feather="twitch"></i>
+                </a>
+            </li>
+            {% endif %}
+        </ul>
     </div>
 </div>
