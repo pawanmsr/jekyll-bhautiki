@@ -16,3 +16,7 @@ package-lock.json
 
 # Ruby
 .ruby-version
+
+# Temporary
+_posts/*
+assets/img/*
