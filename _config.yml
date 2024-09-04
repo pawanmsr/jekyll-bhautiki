@@ -55,6 +55,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-include-cache
+  - jekyll-sitemap # requires base hostname and protocol for site; see url above
 
 # Analytics
 analytics:
