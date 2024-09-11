@@ -66,6 +66,8 @@ bundle exec jekyll serve
 
 ```
 
+[Rakefile](/Rakefile) or shell script for task automation.  
+
 #### Markups
 
 - [SASS](https://sass-lang.com/).
