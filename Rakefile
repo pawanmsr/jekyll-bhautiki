@@ -77,6 +77,6 @@ task :sass do
     end
     $stdout = stdout
     
-    puts result.loaded_urls
-    puts result.source_map
+    puts "#{result.loaded_urls.size} files loaded."
+    puts "Caution: sourcemap is empty!" if result.source_map.strip.empty?
 end
