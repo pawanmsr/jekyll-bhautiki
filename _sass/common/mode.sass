@@ -1,6 +1,4 @@
-@use "sass:meta"
-
-@use "variables"
+@use 'sass:meta'
 
 @mixin light-mode
     --color: #06080F
@@ -46,71 +44,3 @@ html[data-theme="dark"]
     
     html[data-theme="light"]
         @include light-mode
-
-.off-canvas-content
-    background: var(--background)
-    color: var(--color)
-
-    a
-        color: var(--color)
-        font-weight: variables.$a-font-weight
-    
-    .feather
-        color: var(--color)
-    
-    code
-        font-family: monospace
-        font-weight: variables.$code-font-weight
-    
-    .card
-        background: linear-gradient(to bottom, var(--header-background), var(--content-background))
-        color: var(--color)
-        border-color: var(--color)
-
-        p
-            font-weight: variables.$p-font-weight
-    
-    .card-divider
-        background: var(--header-background)
-    
-    .accordion
-        background: var(--header-background)
-    
-        .accordion-title
-            color: var(--color)
-            &:hover, &:focus
-                background-color: var(--hover)
-        
-        .accordion-content
-            background-color: var(--content-background)
-    
-    footer
-        font-size: smaller
-    
-    blockquote
-        p
-            color: var(--quote-color)
-
-.off-canvas
-    background: var(--bar-background)
-    color: var(--bar-color)
-
-    a
-        color: var(--bar-color)
-
-        &:hover
-            color: var(--bar-link-color)
-
-    .toc-link::before
-        background: var(--bar-color)
-
-    .is-active-link::before
-        background: var(--bar-background)
-
-    .button.hollow
-        color: var(--bar-color)
-        border-color: var(--bar-color)
-
-        &:hover
-            color: var(--bar-link-color)
-            border-color: var(--bar-link-color)
