@@ -1,4 +1,5 @@
 export const toc = () => {
+    // TODO: Find a workaround.
     if (typeof tocbot !== 'undefined') {
         tocbot.init({
             // Options: https://tscanlin.github.io/tocbot/

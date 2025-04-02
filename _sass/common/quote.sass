@@ -1,3 +1,5 @@
+@use "variables"
+
 blockquote
     border: none
     letter-spacing: 3px
@@ -10,7 +12,7 @@ blockquote
     p
         display: inline
         font-size: 20px
-        font-weight: 400
+        font-weight: variables.$p-font-weight
         &:before
             content: "“ "
         &:after

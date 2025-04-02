@@ -1,5 +1,7 @@
 @use "sass:meta"
 
+@use "variables"
+
 @mixin light-mode
     --color: #06080F
     --background: rgb(245, 245, 220) url('/assets/external/img/textured-paper.png')
@@ -51,14 +53,14 @@ html[data-theme="dark"]
 
     a
         color: var(--color)
-        font-weight: 700
+        font-weight: variables.$a-font-weight
     
     .feather
         color: var(--color)
     
     code
         font-family: monospace
-        font-weight: 500
+        font-weight: variables.$code-font-weight
     
     .card
         background: linear-gradient(to bottom, var(--header-background), var(--content-background))
@@ -66,7 +68,7 @@ html[data-theme="dark"]
         border-color: var(--color)
 
         p
-            font-weight: 400
+            font-weight: variables.$p-font-weight
     
     .card-divider
         background: var(--header-background)
