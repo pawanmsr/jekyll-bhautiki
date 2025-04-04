@@ -46,6 +46,7 @@ author:
       username: ""
     goodreads:
       username: ""
+      database: ""
     youtube:
       username: ""
 
