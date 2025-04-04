@@ -1,25 +1,24 @@
 @use '../common/dynamic'
 
 .off-canvas
-    background: var(--bar-background)
-    color: var(--bar-color)
-
+    background: dynamic.$bar-background
+    color: dynamic.$bar-color
     a
-        color: var(--bar-color)
+        color: dynamic.$bar-color
 
         &:hover
-            color: var(--bar-link-color)
+            color: dynamic.$bar-link-color
 
     .toc-link::before
-        background: var(--bar-color)
+        background: dynamic.$bar-color
 
     .is-active-link::before
-        background: var(--bar-background)
+        background: dynamic.$bar-background
 
     .button.hollow
-        color: var(--bar-color)
-        border-color: var(--bar-color)
+        color: dynamic.$bar-color
+        border-color: dynamic.$bar-color
 
         &:hover
-            color: var(--bar-link-color)
-            border-color: var(--bar-link-color)
+            color: dynamic.$bar-link-color
+            border-color: dynamic.$bar-link-color

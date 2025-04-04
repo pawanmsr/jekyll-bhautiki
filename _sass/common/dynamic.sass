@@ -1,3 +1,25 @@
 @use 'mode'
+@use 'sass:color'
 
+// Content
+$color: var(--color)
+$background: var(--background)
+$quote-color: var(--quote-color)
+
+// Category
+$hover-and-focus: var(--hover)
+$header-background: var(--header-background)
+$content-background: var(--content-background)
+$card-background: linear-gradient(to bottom, $header-background, $content-background)
+
+// Bar
+$bar-color: var(--bar-color)
+$bar-background: var(--bar-background)
+$bar-link-color: var(--bar-link-color)
+
+// Table
 $table-background: var(--background)
+$table-color-scale: 5% !default
+$table-hover-scale: 2% !default
+
+$table-border: 1px solid smart-scale($table-background, $table-color-scale) !default

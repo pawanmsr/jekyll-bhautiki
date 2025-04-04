@@ -1,42 +1,43 @@
 @use '../common/dynamic'
+@use '../common/static'
 
 .off-canvas-content
-    background: var(--background)
-    color: var(--color)
+    background: dynamic.$background
+    color: dynamic.$color
 
     a
-        color: var(--color)
+        color: dynamic.$color
         font-weight: static.$a-font-weight
     
     .feather
-        color: var(--color)
+        color: dynamic.$color
     
     code
         font-family: monospace
         font-weight: static.$code-font-weight
     
     .card
-        background: linear-gradient(to bottom, var(--header-background), var(--content-background))
-        color: var(--color)
-        border-color: var(--color)
+        color: dynamic.$color
+        border-color: dynamic.$color
+        background: dynamic.$card-background
 
         p
             font-weight: static.$p-font-weight
     
     .card-divider
-        background: var(--header-background)
+        background: dynamic.$header-background
     
     .accordion
-        background: var(--header-background)
+        background: dynamic.$header-background
     
         .accordion-title
-            color: var(--color)
+            color: dynamic.$color
             &:hover, &:focus
-                background-color: var(--hover)
+                background-color: dynamic.$hover-and-focus
         
         .accordion-content
-            background-color: var(--content-background)
+            background-color: dynamic.$content-background
     
     blockquote
         p
-            color: var(--quote-color)
+            color: dynamic.$quote-color
