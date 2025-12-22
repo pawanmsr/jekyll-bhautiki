@@ -85,7 +85,6 @@ Easy feature integration.
 TODO
 
 - [ ] Blender/CAD/Animation
-- [ ] Math 4
 
 ### Design
 
@@ -145,6 +144,8 @@ export pygments_dir=assets/external/pygments/css/
 mkdir -p $pygments_dir
 pygmentize -f html -S $style -a .highlight > $pygments_dir$style.css
 
-# TODO: convert to sass.
+# Or alternatively
+# pygmentize -f html -S $style -a .highlight.sass > $pygments_dir$style.sass
+# for SASS output
 
 ```
