@@ -49,6 +49,12 @@ author:
       database: ""
     youtube:
       username: ""
+    tumblr:
+      username: ""
+    threads:
+      username: ""
+    mathstodon:
+      username: ""
 
 # Build settings
 # theme: jekyll-bhautiki
