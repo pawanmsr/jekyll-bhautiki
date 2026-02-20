@@ -81,14 +81,11 @@ Easy feature integration.
 - [Foundation](https://get.foundation/)
 - [MathJax](https://www.mathjax.org/)
 - [TocBot](https://tscanlin.github.io/tocbot/)
-
-TODO
-
-- [ ] Blender/CAD/Animation
+- [ThreeJS](https://threejs.org/)
 
 ### Design
 
-<pre>
+```
 
         |    Header    |
         ----------------
@@ -98,7 +95,7 @@ TODO
         ----------------
         |    Footer    |
 
-</pre>
+```
 
 The **Navbar** and Footer is static.
 
@@ -123,6 +120,7 @@ Space (dark) and Vintage Notebook (multicolor).
 English (India/UK) is the default.
 
 - Indian Language Support:
+    - [ ] Sanskrit
     - [ ] Hindi
     - [ ] Marathi
     - [ ] Telugu
@@ -131,6 +129,7 @@ English (India/UK) is the default.
 
 - Foreign Language Support:
     - [ ] French
+    - [ ] German
     - [ ] . . .  
 
 Syntax highlighting is performed by [rouge](https://github.com/rouge-ruby/rouge). Visit [Pygments](https://pygments.org/styles/) for available styles.
