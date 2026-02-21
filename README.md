@@ -81,6 +81,7 @@ Easy feature integration.
 - [Foundation](https://get.foundation/)
 - [MathJax](https://www.mathjax.org/)
 - [TocBot](https://tscanlin.github.io/tocbot/)
+- ~~[ThreeJS](https://threejs.org/)~~
 - [BabylonJS](https://www.babylonjs.com/)
 
 ### Design
